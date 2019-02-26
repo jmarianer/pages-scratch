@@ -1,0 +1,193 @@
+<html><head><style>body {
+  color: #071A32;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1 {
+  background-color: #071A32;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 10px 50px;
+  margin: 0;
+}
+
+.account {
+  font-size: 2rem;
+  padding: 20px 50px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.subaccount {
+  padding: 10px 50px;
+  font-size: 1.5rem;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex: 100% 1 1;
+}
+
+.content * {
+  flex: 100% 1 1;
+}
+
+.accounts {
+  padding: 20px 50px;
+  border-right: 1px solid #d8d8d8;
+}
+
+.subaccounts {
+  display: none;
+}
+
+.summary {
+  font-size: 0.5rem;
+  padding: 5px 50px;
+}
+
+.account-details {
+  display: none;
+  padding: 0 50px;
+}
+
+.header {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.json {
+  font-family: monospace;
+  white-space: pre;
+  overflow: auto;
+  background-color: #d8d8d8;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.details {
+  overflow: auto;
+  padding-bottom: 50px;
+}</style><script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js"></script><script src="dump.js"></script></head><body><h1>Account service dump</h1><div class="content"><div class="accounts"><div class="account" data-uuid="0c025bce-4a1d-4d7a-9954-8df972170358">Bridge<div class="summary">1 sub-accounts, 1applications</div><div class="subaccounts"><div class="subaccount" data-uuid="7258f08f-264d-4763-99fb-5aa9577d225d">Zort</div></div></div><div class="account" data-uuid="ed719752-2e1b-4d69-b2ea-05b6c382b07b">Foo<div class="summary">1 sub-accounts, 1applications</div><div class="subaccounts"><div class="subaccount" data-uuid="860229a6-7763-46e1-a197-45b61a98d564">Zort</div></div></div><div class="account" data-uuid="32875f85-5701-4c2a-acaf-6454a3e8961e">boo<div class="summary">0 sub-accounts, 1applications</div><div class="subaccounts"></div></div></div><div class="details"><div class="account-details" id="0c025bce-4a1d-4d7a-9954-8df972170358"><div class="header">Account summary:</div><div class="json">{"account-uuid" "0c025bce-4a1d-4d7a-9954-8df972170358",
+ "name" "Bridge",
+ "subdomain" "bridge"}
+</div><div class="header">Application learn</div><div class="json">{"vanity-domain-state" "inactive",
+ "config" {},
+ "archived" false,
+ "application" "learn",
+ "revision-date" "2019-02-25T22:41:44.685211Z",
+ "account-state" "active",
+ "source" "Learn",
+ "account-uuid" "0c025bce-4a1d-4d7a-9954-8df972170358",
+ "revision-id" 3,
+ "revision-author" "Account Service Syncer"}
+</div></div><div class="account-details" id="ed719752-2e1b-4d69-b2ea-05b6c382b07b"><div class="header">Account summary:</div><div class="json">{"account-uuid" "ed719752-2e1b-4d69-b2ea-05b6c382b07b",
+ "name" "Foo",
+ "subdomain" "foo"}
+</div><div class="header">Application learn</div><div class="json">{"vanity-domain-state" "inactive",
+ "config"
+ {"bridge-retain" true,
+  "locale" "en",
+  "auth" {"subprovider" "basic", "provider" "OAuth2"},
+  "create-user-from-auth-hash" true},
+ "archived" false,
+ "subdomain" "learn",
+ "application" "learn",
+ "revision-date" "2019-02-25T22:41:44.914408Z",
+ "account-state" "active",
+ "source" "Learn",
+ "account-uuid" "ed719752-2e1b-4d69-b2ea-05b6c382b07b",
+ "revision-id" 2,
+ "revision-author" "Account Service Syncer"}
+</div></div><div class="account-details" id="32875f85-5701-4c2a-acaf-6454a3e8961e"><div class="header">Account summary:</div><div class="json">{"account-uuid" "32875f85-5701-4c2a-acaf-6454a3e8961e",
+ "name" "boo",
+ "subdomain" "boo"}
+</div><div class="header">Application learn</div><div class="json">{"vanity-domain-state" "inactive",
+ "config"
+ {"bridge-retain" true,
+  "locale" "en",
+  "auth" {"subprovider" "basic", "provider" "OAuth2"},
+  "create-user-from-auth-hash" true},
+ "archived" false,
+ "subdomain" "learn",
+ "application" "learn",
+ "revision-date" "2019-02-25T22:41:45.133652Z",
+ "account-state" "active",
+ "source" "Learn",
+ "account-uuid" "32875f85-5701-4c2a-acaf-6454a3e8961e",
+ "revision-id" 2,
+ "revision-author" "Account Service Syncer"}
+</div></div><div class="account-details" id="7258f08f-264d-4763-99fb-5aa9577d225d"><div class="header">Sub-account summary:</div><div class="json">{"vanity-domain-state" "inactive",
+ "config"
+ {"support-level" "adminsOnly",
+  "locale" "en",
+  "tac-type" "domestic",
+  "tac-updated-at" "2019-02-25T22:40:59.664Z",
+  "scim" false,
+  "show-custom-support-info" false,
+  "create-user-from-auth-hash" true},
+ "sub-account-uuid" "7258f08f-264d-4763-99fb-5aa9577d225d",
+ "name" "Zort",
+ "archived" false,
+ "subdomain" "zort-bridge",
+ "revision-date" "2019-02-25T22:41:44.759686Z",
+ "source" "Learn",
+ "account-uuid" "0c025bce-4a1d-4d7a-9954-8df972170358",
+ "revision-id" 1,
+ "revision-author" "Account Service Syncer"}
+</div><div class="header">Application learn</div><div class="json">{"vanity-domain-state" "inactive",
+ "config"
+ {"support-level" "adminsOnly",
+  "locale" "en",
+  "scim" false,
+  "show-custom-support-info" false,
+  "create-user-from-auth-hash" true},
+ "sub-account-uuid" "7258f08f-264d-4763-99fb-5aa9577d225d",
+ "archived" false,
+ "application" "learn",
+ "revision-date" "2019-02-25T22:41:44.808855Z",
+ "account-state" "active",
+ "source" "Learn",
+ "account-uuid" "0c025bce-4a1d-4d7a-9954-8df972170358",
+ "revision-id" 1,
+ "revision-author" "Account Service Syncer"}
+</div></div><div class="account-details" id="860229a6-7763-46e1-a197-45b61a98d564"><div class="header">Sub-account summary:</div><div class="json">{"vanity-domain-state" "inactive",
+ "config"
+ {"support-level" "adminsOnly",
+  "locale" "en",
+  "tac-type" "domestic",
+  "tac-updated-at" "2019-02-25T22:41:31.202Z",
+  "scim" false,
+  "show-custom-support-info" false,
+  "create-user-from-auth-hash" true},
+ "sub-account-uuid" "860229a6-7763-46e1-a197-45b61a98d564",
+ "name" "Zort",
+ "archived" false,
+ "subdomain" "zort-foo",
+ "revision-date" "2019-02-25T22:41:44.984668Z",
+ "source" "Learn",
+ "account-uuid" "ed719752-2e1b-4d69-b2ea-05b6c382b07b",
+ "revision-id" 1,
+ "revision-author" "Account Service Syncer"}
+</div><div class="header">Application learn</div><div class="json">{"vanity-domain-state" "inactive",
+ "config"
+ {"support-level" "adminsOnly",
+  "locale" "en",
+  "scim" false,
+  "show-custom-support-info" false,
+  "create-user-from-auth-hash" true},
+ "sub-account-uuid" "860229a6-7763-46e1-a197-45b61a98d564",
+ "archived" false,
+ "application" "learn",
+ "revision-date" "2019-02-25T22:41:45.028802Z",
+ "account-state" "active",
+ "source" "Learn",
+ "account-uuid" "ed719752-2e1b-4d69-b2ea-05b6c382b07b",
+ "revision-id" 1,
+ "revision-author" "Account Service Syncer"}
+</div></div></div></div></body></html>
